@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Weather Data Dashboard</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center">Weather Data Dashboard</h1>
+        <form id="weather-form">
+            <div class="form-group">
+                <label for="location">Location:</label>
+                <input type="text" id="location" name="location" class="form-control" placeholder="Enter a location" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Get Weather</button>
+        </form>
+        <h2 class="mt-5">Current Weather Data</h2>
+        <div id="weather-data"></div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#weather-form').on('submit', function(event) {
+                event.preventDefault();
+                $.post('/get_weather', $(this).serialize(), function(data) {
+                    $('#weather-data').html('<pre>' + JSON.stringify(data, null, 2) + '</pre>');
+                });
+            });
+        });
+    </script>
+</body>
+</html>
