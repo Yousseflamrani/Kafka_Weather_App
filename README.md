@@ -7,4 +7,5 @@ docker-compose -up
 
 #Lancer app.py
 
-python app.py & python weather_producer.py
+#python 
+app.py & python weather_producer.py
