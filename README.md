@@ -1,6 +1,7 @@
-# Kafka_Weather_App2
+# Kafka_Weather_App
 
-j'ai traviller le projet Kafka tout seul: ALAOUI EL MRANI Youssef 
+J'ai fait le projet Kafka tout seul: ALAOUI EL MRANI Youssef 
+
 #Etape pour executer l'application
 
 #Lancer Docker 
