@@ -1,6 +1,5 @@
 # Kafka_Weather_App
 
-J'ai fait le projet Kafka tout seul: ALAOUI EL MRANI Youssef 
 
 #Etape pour executer l'application
 
